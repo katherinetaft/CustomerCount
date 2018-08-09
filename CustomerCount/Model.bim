@@ -15185,23 +15185,28 @@
           },
           {
             "name": "# Churned BDWO",
-            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[Tracker New/Renew/Churn]=\"Churned BDWO\")"
+            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[Tracker New/Renew/Churn]=\"Churned BDWO\")",
+            "formatString": "0"
           },
           {
             "name": "# Churned: Bad Debt",
-            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[UNQ.Support Status (Latest per Acct) (groups)]= \"Churned: Bad Debt\")"
+            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[UNQ.Support Status (Latest per Acct) (groups)]= \"Churned: Bad Debt\")",
+            "formatString": "0"
           },
           {
             "name": "Available Base",
-            "expression": " DISTINCTCOUNT('Tracker by Start Date'[CT Current ID])"
+            "expression": " DISTINCTCOUNT('Tracker by Start Date'[CT Current ID])",
+            "formatString": "0"
           },
           {
             "name": "# Churned End Cust",
-            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[Tracker New/Renew/Churn]=\"Churned\")"
+            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[Tracker New/Renew/Churn]=\"Churned\")",
+            "formatString": "0"
           },
           {
             "name": "# Churned Parnters",
-            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[UNQ.Support Status (Latest per Acct) (groups)]=\"Churned\")"
+            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[UNQ.Support Status (Latest per Acct) (groups)]=\"Churned\")",
+            "formatString": "0"
           },
           {
             "name": "% Natural Churn (End Customers)",

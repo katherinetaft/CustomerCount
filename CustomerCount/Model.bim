@@ -15182,6 +15182,46 @@
             "name": "Unique Accounts with Renewal Decision",
             "expression": "DISTINCTCOUNT('Tracker by Start Date'[Account Name])",
             "formatString": "#,0"
+          },
+          {
+            "name": "# Churned BDWO",
+            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[Tracker New/Renew/Churn]=\"Churned BDWO\")"
+          },
+          {
+            "name": "# Churned: Bad Debt",
+            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[UNQ.Support Status (Latest per Acct) (groups)]= \"Churned: Bad Debt\")"
+          },
+          {
+            "name": "Available Base",
+            "expression": " DISTINCTCOUNT('Tracker by Start Date'[CT Current ID])"
+          },
+          {
+            "name": "# Churned End Cust",
+            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[Tracker New/Renew/Churn]=\"Churned\")"
+          },
+          {
+            "name": "# Churned Parnters",
+            "expression": " CALCULATE(DISTINCTCOUNT('Tracker by Start Date'[CT Current ID]),'Tracker by Start Date'[UNQ.Support Status (Latest per Acct) (groups)]=\"Churned\")"
+          },
+          {
+            "name": "% Natural Churn (End Customers)",
+            "expression": " DIVIDE([# Churned End Cust],[Available Base],BLANK())",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "% Natural Churn (Partners)",
+            "expression": " DIVIDE([# Churned Parnters],[Available Base],BLANK())",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "% Churn with BDWO (End Customers)",
+            "expression": " DIVIDE(([# Churned End Cust]+[# Churned BDWO]),[Available Base],BLANK())",
+            "formatString": "0.0%;-0.0%;0.0%"
+          },
+          {
+            "name": "% Churn with Bad Debt (Partners)",
+            "expression": " DIVIDE(([# Churned Parnters]+[# Churned: Bad Debt]),[Available Base],BLANK())",
+            "formatString": "0.0%;-0.0%;0.0%"
           }
         ],
         "annotations": [

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ComparisonInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ConnectionInfoSource>
+    <UseProject>true</UseProject>
+    <ServerName>localhost:55566</ServerName>
+    <DatabaseName>CustomerCount_Katherine Barr_767e4140-2b47-4091-ae31-f3ff1cf1fca0</DatabaseName>
+    <ProjectName>CustomerCount</ProjectName>
+    <ProjectFile>C:\Users\Katherine Barr\source\repos\CustomerCount\CustomerCount7\CustomerCount\CustomerCount\CustomerCount.smproj</ProjectFile>
+  </ConnectionInfoSource>
+  <ConnectionInfoTarget>
+    <UseProject>false</UseProject>
+    <ServerName>asazure://westus.asazure.windows.net/prodas</ServerName>
+    <DatabaseName>CustomerCount</DatabaseName>
+  </ConnectionInfoTarget>
+  <OptionsInfo>
+    <OptionPerspectives>false</OptionPerspectives>
+    <OptionMergePerspectives>true</OptionMergePerspectives>
+    <OptionCultures>false</OptionCultures>
+    <OptionMergeCultures>true</OptionMergeCultures>
+    <OptionRoles>true</OptionRoles>
+    <OptionPartitions>true</OptionPartitions>
+    <OptionRetainPartitions>false</OptionRetainPartitions>
+    <OptionMeasureDependencies>true</OptionMeasureDependencies>
+    <OptionProcessingOption>Default</OptionProcessingOption>
+    <OptionAffectedTables>false</OptionAffectedTables>
+  </OptionsInfo>
+  <SkipSelections />
+</ComparisonInfo>
